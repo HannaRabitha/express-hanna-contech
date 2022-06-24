@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-// var counter = 0;
+var counter = 0;
 
 const user = {
   firstName: "Hanna",
@@ -33,12 +33,18 @@ router.get("/", function (req, res, next) {
     title: "Hi! its me Hanna",
     user,
     articles: posts,
+    counter: counter,
   });
 });
 
 /* POST inc counter ++. */
 router.post("/", function (req, res, next) {
   // counter += 1;
+  res.redirect("/");
+});
+
+router.post("/inc-counter", function (req, res, next) {
+  counter = counter + 1;
   res.redirect("/");
 });
 

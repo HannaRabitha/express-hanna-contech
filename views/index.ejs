@@ -15,6 +15,14 @@
       <%= user.lastName %>
   </p>
 
+  <div>
+    <p>Counter = <%= counter %>
+    </p>
+    <form method="POST" action="inc-counter">
+      <input type="submit" value="Increase by 1">
+    </form>
+  </div>
+
 
   <ul>
     <% articles.forEach((article)=> { %>
