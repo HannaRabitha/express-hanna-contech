@@ -8,15 +8,27 @@
 </head>
 <body>
   <h1>
-    <%= title %>
+    Welcome to My Blog
   </h1>
-  <p>Welcome to <%= title %>
-  </p>
-  <p>Counter = <%= counter %>
+
+  <p>I'm <%= user.firstName %>
+      <%= user.lastName %>
   </p>
 
-  <form method="POST" action"/increase-counter">
-    <input type="submit" value="Increase by 1">
-  </form>
+
+  <ul>
+    <% articles.forEach((article)=> { %>
+      <li>
+        <h2>
+          <%= article.title %>
+        </h2>
+        <p>
+          <%= article.body %>
+        </p>
+      </li>
+      <hr />
+      <% }) %>
+  </ul>
+
 </body>
 </html>
