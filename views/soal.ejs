@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <p><a href="/">Back Home</a></p>
+    <h1>
+        <%= title %>
+    </h1>
+    <p>Jawab benar: <%= scoreTrue %>
+    </p>
+    <p>Jawab salah: <%= scoreFalse %>
+    </p>
+    <div>
+        <form method="POST" action="soals/jawab-soal">
+            <p>
+                <%= dataSoal.textSoal %>
+            </p>
+            <% dataSoal.options.forEach((opt)=> { %>
+                <input type="radio" name="answerUser" value="<%=opt%>">
+                <label>
+                    <%= opt %>
+                </label><br>
+                <% }) %>
+                    <p><input type="submit" value="Jawab"></p>
+        </form>
+    </div>
+</body>
+</html>
