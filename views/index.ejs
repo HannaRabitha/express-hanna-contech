@@ -5,27 +5,41 @@
     <%= title %>
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://kit.fontawesome.com/b5b45e1e61.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>
-    Welcome to My Blog
-  </h1>
 
-  <a href="/soals">SOALS</a>
-  <p>I'm <%= user.firstName %>
-      <%= user.lastName %>
-  </p>
+  <div class="center">
+    <img width="250" height="250" src="images/memoji-hanna.png" alt="alternative"></a>
 
+
+    <h1>
+      Welcome to My Page
+    </h1>
+
+    <h2>I'm <%= user.firstName %>
+        <%= user.lastName %>
+    </h2>
+
+    <a href="/soals">
+      <button>
+        Page Soal <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </a>
+
+  </div>
+
+  <!-- 
   <div>
     <p>Counter = <%= counter %>
     </p>
     <form method="POST" action="inc-counter">
       <input type="submit" value="Increase by 1">
     </form>
-  </div>
+  </div> -->
 
 
-  <ul>
+  <!-- <ul>
     <% articles.forEach((article)=> { %>
       <li>
         <h2>
@@ -37,7 +51,7 @@
       </li>
       <hr />
       <% }) %>
-  </ul>
+  </ul> -->
 
 </body>
 </html>

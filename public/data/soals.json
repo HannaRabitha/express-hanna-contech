@@ -1,0 +1,92 @@
+[
+    {
+      "textSoal": "Mana frasa yang sepola dengan pohon rindang?",
+      "options": [
+        ["ibu cerewet"],
+        ["rumah kayu"],
+        ["sanggup mengambil"],
+        ["telah membuang"]
+      ],
+      "answer": "ibu cerewet"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan pintu tinggi?",
+      "options": [
+        ["tangan kanan"],
+        ["sudah pintar"],
+        ["telah membuang"],
+        ["anak pembohong"]
+      ],
+      "answer": "anak pembohong"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan gadis cantik?",
+      "options": [
+        ["pemain andal"],
+        ["masih malas"],
+        ["lukisan tangan"],
+        ["telah membuang"]
+      ],
+      "answer": "pemain andal"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan lampu terang?",
+      "options": [
+        ["sepatu kain"],
+        ["sepatu kaca"],
+        ["air deras"],
+        ["akan mencuci"]
+      ],
+      "answer": "air deras"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan rambut menawan?",
+      "options": [
+        ["piring kaca"],
+        ["pemain cekatan"],
+        ["sudah menjual"],
+        ["ingin kuat"]
+      ],
+      "answer": "pemain cekatan"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan pejabat bijaksana?",
+      "options": [
+        ["toples kaca"],
+        ["rak buku kayu"],
+        ["pemuda ganteng"],
+        ["mampu sabar"]
+      ],
+      "answer": "pemuda ganteng"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan gelang keren?",
+      "options": [
+        ["pemain cekatan"],
+        ["mau makan"],
+        ["rumah kayu"],
+        ["tembok kayu"]
+      ],
+      "answer": "pemain cekatan"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan rak piring tinggi?",
+      "options": [
+        ["sudah memiliki"],
+        ["hendak membawa"],
+        ["sedang rapat"],
+        ["pemain cekatan"]
+      ],
+      "answer": "pemain cekatan"
+    },
+    {
+      "textSoal": "Mana frasa yang sepola dengan kursi pendek?",
+      "options": [
+        ["tangga tinggi"],
+        ["sudah pintar"],
+        ["hendak membawa"],
+        ["botol plastik"]
+      ],
+      "answer": "tangga tinggi"
+    }
+  ]

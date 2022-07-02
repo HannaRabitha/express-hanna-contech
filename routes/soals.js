@@ -1,36 +1,32 @@
 var express = require("express");
 var router = express.Router();
+var dataSoal = require("../public/data/soals.json");
 
 var scoreTrue = 0;
 var scoreFalse = 0;
+let len, idx;
 
-const dataSoal = {
-  textSoal: "Mana frasa yang sepola dengan pohon rindang?",
-  options: [
-    ["ibu cerewet"],
-    ["rumah kayu"],
-    ["sanggup mengambil"],
-    ["telah membuang"],
-  ],
-  answer: "ibu cerewet",
-};
-
-/* GET users listing. */
+/* GET soals listing. */
 router.get("/", function (req, res, next) {
-  // console.log(dataSoal);
+  len = dataSoal.length;
+  idx = Math.floor(Math.random() * len);
+  //  console.log(idx, "IDX SOALSSS");
+
   res.render("soal", {
     title: "Page Soal",
-    dataSoal,
+    dataSoal: dataSoal[idx],
     scoreTrue,
     scoreFalse,
   });
 });
 
+/* GET jawab-soal */
 router.post("/jawab-soal", function (req, res, next) {
   const jawab = req.body.answerUser;
-  console.log(jawab);
+  // console.log(jawab);
+  // console.log(idx, "IDX /JAWAB-SOAL");
 
-  if (jawab === dataSoal.answer) {
+  if (jawab === dataSoal[idx].answer) {
     scoreTrue++;
   } else {
     scoreFalse++;

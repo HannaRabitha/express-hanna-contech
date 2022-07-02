@@ -5,28 +5,42 @@
         <%= title %>
     </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://kit.fontawesome.com/b5b45e1e61.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <p><a href="/">Back Home</a></p>
-    <h1>
-        <%= title %>
-    </h1>
-    <p>Jawab benar: <%= scoreTrue %>
-    </p>
-    <p>Jawab salah: <%= scoreFalse %>
-    </p>
-    <div>
+    <h3>
+        <a href="/"><i class="fa-solid fa-arrow-left"></i>&nbsp; &nbsp; Back Home</a>
+    </h3>
+
+    <div class="grid-container-center">
+        <h1 class="text-true">True: <%= scoreTrue %>
+        </h1>
+        <h1 class="text-false">False: <%= scoreFalse %>
+        </h1>
+
+    </div>
+
+    <div class="center">
         <form method="POST" action="soals/jawab-soal">
-            <p>
+            <h2 class="text-soal">
                 <%= dataSoal.textSoal %>
-            </p>
-            <% dataSoal.options.forEach((opt)=> { %>
-                <input type="radio" name="answerUser" value="<%=opt%>">
-                <label>
-                    <%= opt %>
-                </label><br>
-                <% }) %>
-                    <p><input type="submit" value="Jawab"></p>
+            </h2>
+            <br />
+
+            <div class="options">
+                <% dataSoal.options.forEach((opt)=> { %>
+                    <input type="radio" name="answerUser" value="<%=opt%>">
+                    <label>
+                        <%= opt %>
+                    </label><br>
+                    <% }) %>
+
+            </div>
+            <br />
+            <button type="submit" value="Jawab">
+                Answer
+            </button>
         </form>
     </div>
 </body>
